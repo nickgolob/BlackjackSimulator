@@ -1,7 +1,6 @@
 import blackjack
-import random
 
-from cards.constants import *
+from constants import *
 
 def main():
   game = blackjack.BlackJack()

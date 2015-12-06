@@ -1,5 +1,6 @@
-from cards.constants import *
-import cards.deck
+from constants import *
+
+from cards.deck_manager import DeckManager
 import player
 
 class BlackJack:
@@ -7,7 +8,7 @@ class BlackJack:
   INITIAL_HAND_ID = 0
 
   def __init__(self):
-    self.deck_manager = cards.deck.DeckManager()
+    self.deck_manager = DeckManager()
     self.players = [player.BlackJackPlayer() for i in range(NUMBER_PLAYERS)]
     self.house = player.HousePlayer()
 
